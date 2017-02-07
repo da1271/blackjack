@@ -1,0 +1,19 @@
+h1 {
+  text-align: center;
+  color: white;
+}
+body {
+  background-color: black;
+}
+#board{
+  border-radius:80%;
+  background:green;
+  width:750px;
+  height:550px;
+  margin:auto;
+
+}
+div {
+  color: white;
+  display: block;
+}
