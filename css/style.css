@@ -1,19 +1,216 @@
 h1 {
+  font-family: 'Helvetica', Arial, Lucida Grande, sans-serif !important;
   text-align: center;
   color: white;
 }
 body {
   background-color: black;
 }
+img {
+  width:120px;
+  height: 160px;
+}
 #board{
   border-radius:80%;
   background:green;
-  width:750px;
-  height:550px;
   margin:auto;
+  position: relative;
+  width:1300px;
+  height:550px;
 
 }
-div {
+
+#hitButton{
+  float:left;
+  width: 15em;  height: 2em;
   color: white;
-  display: block;
+  font-weight:bold;
+  border:2px solid #ccc;
+  border-color:#333;
+  background-color:green;
+
+}
+#stayButton{
+  float:right;
+  width: 15em;  height: 2em;
+  color: white;
+  font-weight:bold;
+  border:2px solid #ccc;
+  border-color:#333;
+  background-color:red;
+}
+#reset-game{
+  float:right;
+  width: 15em;  height: 2em;
+  color: black;
+  font-weight:bold;
+  border:2px solid #ccc;
+  border-color:#333;
+  background-color:red;
+}
+#playButton {
+  float:left;
+  width: 15em;  height: 2em;
+  color: black;
+  font-weight:bold;
+  border:2px solid #ccc;
+  border-color:#333;
+  background-color:green;
+}
+
+#userCard1 {
+  color: white;
+  border: 2px solid red;
+  position:absolute;
+  top:55%;
+  right:65%;
+  width:120px;
+  height: 160px;
+}
+
+#userCard2 {
+  color: white;
+  border: 2px solid red;
+  position:absolute;
+  top:55%;
+  right:55%;
+  width:120px;
+  height: 160px;
+}
+
+#userCard3 {
+  color: white;
+  border: 2px solid red;
+  position:absolute;
+  top:55%;
+  right:45%;
+  width:120px;
+  height: 160px;
+}
+
+#userCard4 {
+  color: white;
+  border: 2px solid red;
+  position:absolute;
+  top:55%;
+  right:35%;
+  width:120px;
+  height: 160px;
+}
+
+#userCard5 {
+  color: white;
+  border: 2px solid red;
+  position:absolute;
+  top:55%;
+  right:25%;
+  width:120px;
+  height: 160px;
+}
+#dealerCard1 {
+  color: white;
+  border: 2px solid red;
+  position:absolute;
+  top:15%;
+  right:65%;
+  width:120px;
+  height: 160px;
+}
+#dealerCard2 {
+  color: white;
+  border: 2px solid red;
+  position:absolute;
+  top:15%;
+  right:55%;
+  width:120px;
+  height: 160px;
+}
+#dealerCard3 {
+  color: white;
+  border: 2px solid red;
+  position:absolute;
+  top:15%;
+  right:45%;
+  width:120px;
+  height: 160px;
+}
+#dealerCard4 {
+  color: white;
+  border: 2px solid red;
+  position:absolute;
+  top:15%;
+  right:35%;
+  width:120px;
+  height: 160px;
+}
+#dealerCard5 {
+  color: white;
+  border: 2px solid red;
+  position:absolute;
+  top:15%;
+  right:25%;
+  width:120px;
+  height: 160px;
+}
+#dealerSign {
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  border-radius:10%;
+  border: 1px solid black;
+  position:absolute;
+  top:27%;
+  right:77%;
+  width:10em;
+  height: 2em;
+
+}
+#userSign {
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  border-radius:10%;
+  border: 1px solid black;
+  position:absolute;
+  top:66%;
+  right:77%;
+  width:10em;
+  height: 2em;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
